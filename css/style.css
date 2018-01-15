@@ -264,6 +264,9 @@ nav a:hover {
   .rush img {
     padding-top: 100px;
   }
+  
+  .btn {
+    display:none;
 }
 
 @media screen and (min-width: 768px), screen and (max-width: 900px){
