@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  transition: 0.2s;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #dfdcde;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+/* navigaciona traka */
+header {
+  width: 100%;
+  background-color: #0e0050;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+header img {
+  float: left;
+  width: 55px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+header img:hover {
+  transform: scale(1.1);
+}
+
+nav span a {
+  border-bottom-right-radius: 10%;
+  border-bottom: 4px solid #cd7500;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  height: 76px;
+  line-height: 74px;
+  width: 120px;
+  float: left;
+}
+
+nav ul li a {
+  text-align: center;
+  display: block;
+  color: #ccc;
+  font-size: 20px;
+}
+
+nav a:hover {
+  background-color: #1b0488;
+  border-radius: 5px;
+}
+/* Naslovna */
+
+/*pozadina*/
+.naslovna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-image: url('../img/boban.jpg');
+  text-align: center;
+  color: rgb(205, 117, 0);
+  padding: 0 20px;
+}
+
+/*plava boja*/
+.boja {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  background-color: #225470;
+  opacity: .8;
+}
+
+/*Centar*/
+.tekst {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #cccccc;
+  z-index: 1;
+}
+
+.tekst p {
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+
+/* o nama */
+
+.rush img {
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* igraci */
+
+/*spisak igraca*/
+.igraci h2 {
+  margin: 10px;
+}
+
+.igraci {
+  padding-top: 80px;
+  text-align: center;
+}
+
+.igraci:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.igraci li a {
+  background-color: rgba(214, 109, 0, 0.6);
+  text-decoration: none;
+  display: block;
+  color: #0e0050;
+  line-height: 30px;
+}
+
+.igraci li {
+  margin: 2px;
+  list-style: none;
+}
+
+.igraci li:hover {
+  background-color: rgba(214, 109, 0, 1);
+  text-transform: uppercase;
+}
+/*lista u dva reda*/
+.igraci .levo {
+  float: left;
+  width: 50%;
+}
+.igraci .desno  {
+  width: 50%;
+  float: right;
+}
+
+/* profili*/
+
+.poz {
+  background-color: rgba(181, 181, 181, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.poz h1 {
+  text-align: center;
+}
+
+.slika {
+  border-radius: 20px;
+  margin-top: 15px;
+  padding: 20px;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*dugme za povratak gore*/
+
+.btn {
+  height: 30px;
+  width: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 10%;
+  border-radius: 5px;
+}
+
+/*slike igraca */
+#pahovski {
+  background-image: url('../img/pahovski.jpg');
+}
+#neci {
+  background-image: url('../img/neci.jpg');
+}
+#vlad {
+  background-image: url('../img/vlad.jpg');
+}
+#nikola {
+  background-image: url('../img/nikola.jpg');
+}
+#bole {
+  background-image: url('../img/bole.jpg');
+}
+#prangija {
+  background-image: url('../img/prangija.jpg');
+}
+#ogi {
+  background-image: url('../img/ogi.jpg');
+}
+#iket {
+  background-image: url('../img/iket.jpg');
+}
+#panda {
+  background-image: url('../img/panda.jpg');
+}
+#joca {
+  background-image: url('../img/joca.jpg');
+}
+
+/*media query*/
+
+@media(max-width:768px) {
+  header {
+    position: fixed;
+  }
+
+  header img {
+    float: none;
+    margin: 0 44%;
+    }
+
+  header ul {
+    float: none;
+    width: 100%;
+  }
+
+  nav span a {
+    border: none;
+    background-color: #1b0488;
+    border-radius: 10px;
+  }
+
+  nav ul li {
+    margin: 0;
+    float: none;
+    width: 100%;
+    height: auto;
+    line-height: normal;
+  }
+
+  .igraci {
+    margin-top: 100px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .rush img {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 768px), screen and (max-width: 900px){
+
+}
