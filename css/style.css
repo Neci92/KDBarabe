@@ -266,7 +266,7 @@ nav a:hover {
   }
 
   .btn {
-    border: 5px solid white;
+    display: none;
   }
 }
 
