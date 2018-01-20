@@ -64,6 +64,11 @@ nav a:hover {
   background-color: #1b0488;
   border-radius: 5px;
 }
+
+#logomob {
+  display: none;
+
+}
 /* Naslovna */
 
 /*pozadina*/
@@ -226,6 +231,16 @@ nav a:hover {
 /*media query*/
 
 @media(max-width:768px) {
+
+  .logobig {
+    display: none;
+  }
+  nav{
+    display: none;
+  }
+  #logomob {
+    display: block;
+  }
   header {
     position: fixed;
   }
@@ -238,6 +253,10 @@ nav a:hover {
   header ul {
     float: none;
     width: 100%;
+  }
+
+  .hidden {
+    display: none;
   }
 
   nav span a {
@@ -254,10 +273,6 @@ nav a:hover {
     line-height: normal;
   }
 
-  .igraci {
-    margin-top: 100px;
-  }
-
   .container {
     width: 90%;
   }
@@ -269,8 +284,4 @@ nav a:hover {
   .btn {
     display: none;
   }
-}
-
-@media screen and (min-width: 768px), screen and (max-width: 900px){
-
 }
